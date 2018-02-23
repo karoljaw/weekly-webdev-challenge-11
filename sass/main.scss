@@ -1,0 +1,28 @@
+@import "veriables";
+@import "btn";
+@import "mixins";
+@import "grid";
+@import "global";
+@import "home";
+@import "header";
+@import "nav";
+@import "utilities";
+@import "section";
+@import "contact";
+@import "icons";
+
+
+
+@font-face {
+    font-family: 'Chunkfive', sans-serif;
+    src: url('Chunkfive.ttf');
+}
+
+body {
+    position: relative;
+    background-color: $blue;
+    font-family: 'Lato', sans-serif;
+}
+
+
+

@@ -1,0 +1,479 @@
+.section {
+    &__title {
+        font-family: 'Chunkfive', sans-serif;
+        font-size: 6rem;
+        color: $middleblue;
+        &--darkblue {
+            color: $darkblue;
+        }
+    }
+    &__text {
+        font-size: 1.6rem;
+        color: $dark;
+        line-height: 3.5rem;
+    }
+}
+
+.destination {
+    background-color: $lightblue;
+    &__top {
+        width: 90%;
+        margin: 0 auto;
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+    &__input-container {
+        position: relative;
+        margin-top: 3rem;
+    }
+    &__input {
+        padding: 1rem 5rem;
+        border-radius: 3rem;
+        border: 1px solid $grey;
+        width: 25rem;
+        outline: none;
+        &::placeholder {
+            font-size: 1.4rem;
+        }
+    }
+    &__links {
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include respond(tab-port) {
+            height: auto;
+            justify-content: flex-end;
+        }
+    }
+    &__link {
+        color: $grey;
+        font-size: 1.6rem;
+        text-decoration: none;
+        transition: .3s;
+        text-align: right;
+        margin-top: 1rem;
+        
+        &--bold {
+            text-transform: uppercase;
+        }
+        &--dark {
+            color: $dark
+        }
+        &:hover {
+            color: $darkblue;
+        }
+    }
+}
+
+.col-2-of-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.batu {
+    position: relative;
+    &__content {
+        position: absolute;
+        padding: 3rem;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        background-color: rgba($white, 0.95);
+        z-index: 3;
+        @include respond(tab-port) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: rgba($white, 0.95);
+            display: none;
+            cursor: pointer;
+            padding: 2rem;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: calc(0% - 10px);
+            transform: rotate(45deg);
+            background-color: rgba($white, 0.95);
+            width: 20px;
+            height: 20px;  
+            @include respond(tab-port) {
+                display: none;
+            }
+        }
+    }
+}
+.batu:hover .batu__content {
+    display: block;
+}
+
+.bromo {
+    position: relative;
+    width: 57%;
+    float: left;
+    @include respond(tab-port) {
+        width: 100%;
+    }
+    &__content {
+        position: absolute;
+        padding: 3rem;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba($white, 0.95);
+        @include respond(tab-port) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: rgba($white, 0.95);
+            display: none;
+            cursor: pointer;
+        }
+        @include respond(tab-land) {
+            padding: 2rem;
+        }
+        &::before {
+            content: "";
+           position: absolute;
+           top: 50%;
+           right: calc(0% - 10px);
+           transform: rotate(45deg);
+           background-color: rgba($white, 0.95);
+            width: 20px;
+            height: 20px; 
+            @include respond(tab-port) {
+                display: none;
+            }
+        }
+    }
+}
+
+.bromo:hover .bromo__content {
+    display: block;
+}
+
+.feature {
+    @include respond(tab-port) {
+        @include center;
+    }
+    &__title {
+        position: relative;
+        font-size: 3rem;
+        color: $darkblue;
+        font-weight: 300;
+        @include respond(phone) {
+            @include center;
+        }
+    }
+    &__image {
+        padding-bottom: .5rem;
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    &__text {
+        font-size: 1.6rem;
+        color: $dark;
+        line-height: 3.5rem;
+        @include respond(tab-land) {
+            line-height: 2.5rem;
+            
+        }
+        @include respond(phone) {
+            display: none;
+        }
+    }
+}
+
+.balance {
+    position: relative;
+    width: 40%;
+    float: right;
+    cursor: pointer;
+    @include respond(tab-port) {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    &__content {
+        position: absolute;
+        padding: 4rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba($white, 0.95);
+        border-radius: 50%;
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+}
+
+.balance:hover .balance__content {
+    display: block;
+}
+
+.gallery-nav {
+    width: 11rem;
+    padding-top: 5rem;
+    text-align: center;
+    margin: 0 auto;
+    &__link {
+        display: inline-block;
+        padding: 0 .4rem;
+        color: $grey;
+        font-size: 1.8rem;
+        text-decoration: none;
+        transition: .3s;
+        &:hover {
+            color: $darkblue;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.img {
+    width: 100%;
+}
+
+.set {
+    background-color: $white;
+    &__title {
+        text-align: center;
+    }
+}
+
+.ittinery {
+    background-color: $yellow;
+
+  
+    &__content {
+        padding: 3rem;
+        padding-bottom: 10rem;
+    }
+    &__title-box {
+        height: 7.4rem;
+        background: 
+        url("../img/shape-27.png") no-repeat 81% 35%, 
+        url("../img/shape-26.png") no-repeat 16% 90%, 
+        url("../img/shape-25.png") no-repeat 102%,
+        url("../img/ittinery-bg.png") right no-repeat,
+        linear-gradient($middleblue, $middleblue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        color: $white;
+    }
+    &__date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $darkblue;
+        font-size: 1.6rem;
+        clear: both;
+    }
+    &__input {
+        background-color: $white;
+        border: 1px solid $darkblue;
+        border-radius: .5rem;
+        font-size: 2.4rem;
+        font-weight: 300;
+        padding: 1.5rem;
+        margin-top: 1rem;
+        clear: both;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__image {
+        width: 3em;
+        padding-right: 1.5rem;
+    }
+    &__text {
+        color: $greyer;
+    }
+    &__text--small {
+        font-size: 1.4rem;
+        padding-top: .5rem;
+    }
+    &__text:first-of-type {
+        margin-right: auto;
+    }
+    &__text:last-of-type {
+        margin-right: 1.5rem;
+    }
+    &__add {
+        background-color: $lightyellow;
+        display: inline-block;
+        float: right;
+        margin-right: 1rem;
+        &--block {
+            display: block;
+            margin: 0 1rem;
+            border-top: 1px solid darken($lightyellow, 35%);
+            float: none;
+            padding: 1rem;
+        }
+    }
+    &__sub {
+        font-size: 1.6rem;
+        color: darken($lightyellow, 35%);
+        line-height: 3.5rem;
+        padding: 0 1rem;
+        &--darker {
+            color: darken($lightyellow, 45%);
+        }
+    }
+    &__drag {
+        background-color: $darkeryellow;
+        border: 3px dashed darken($lightyellow, 10%);
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        height: 7rem;
+        margin-top: 2rem;
+        clear: both;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__drag-text {
+        color: darken($lightyellow, 20%);
+    }
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.destination-list {
+    @include respond(tab-port) {
+        margin-top: 5rem;
+    }
+    &__title-box {
+        height: 7.4rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__heading {
+        margin-top: 1rem;
+        color: $darkblue;
+        font-size: 1.8rem;
+    }
+    &__line {
+        margin-top: 1rem;
+        background-color: $darkblue;
+        width: 68px;
+        height: 3px;
+    }
+    &__nav {
+        display: flex;
+    }
+    &__text {
+        font-size: 1.6rem;
+        color: $grey;
+        margin-right: .5rem;
+    }
+    &__text--darkblue {
+        color: $darkblue;
+    }
+    &__icon {
+        margin-right: auto;
+    }
+    &__icon--look {
+        margin-right: 1rem;
+
+    }
+}
+
+  .more {
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      top: calc(100% - 50px);
+      right: 40%;
+      background-image: linear-gradient(-20deg, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.1) 30%, transparent 35%);
+      display: flex;
+      align-items: center;
+      color: $white;
+      @include respond(tab-port) {
+          display: none;
+      }
+      &--small {
+        left: calc(100% - 100px);
+      }
+      &__text {
+          font-size: 1.6rem;
+      }
+}
+
+.footer {
+    position: relative;
+    height: 400px;
+    background-color: $lightblack;
+    background-image: url("../img/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    font-size: 1.4rem;
+    @include respond(tab-port) {
+        height: 300px;
+    }
+    @include respond(phone) {
+        height: 200px;
+    }
+    &__copy {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+    &__text {
+        color: $white;
+        opacity: 0.5;
+    }
+    &__nav {
+        color: $grey;
+        float: left;
+        color: $grey;
+        padding: 2rem;
+        @include respond(phone) {
+            float: none;
+            text-align: center;
+        }
+    }
+    &__social-icons {
+        padding: 2rem;
+        float: right;
+        @include respond(phone) {
+            float: none;
+            text-align: center;
+        }
+    }
+    &__link {
+        color: $grey;
+        text-decoration: none;
+    }
+    &__bullet {
+        padding: 0 1rem;
+    }
+    
+}

@@ -1,0 +1,54 @@
+.btn {
+    color: $purple;
+    background-color: $yellow;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 2.5rem 3rem;
+    display: inline-block;
+    border-radius: 3rem;
+    border: none;
+    transition: .3s;
+    &:hover {
+        background-color: $darkblue;
+        cursor: pointer;
+        color: $white;
+    }
+}
+
+.btn--contact {
+    margin: 1rem;
+    margin-left: auto;
+    background-color: $green;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2.5rem 2rem;
+}
+
+.btn--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 174px;
+    border-radius: 30px;
+    color: $white;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.btn--printer {
+background-color: $middleblue;
+width: 130px;
+}
+
+.btn--pdf {
+    background-color: $green;
+}
+
+.icon-file-pdf,
+.icon-printer {
+    width: 3rem !important;
+    fill: white;
+}
+

@@ -1,0 +1,49 @@
+.mt {
+    margin-top: 3rem;
+}
+
+.mb {
+    margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+        margin-bottom: 2rem;
+    }
+}
+
+.mb--small {
+    margin-bottom: 1rem;
+}
+
+.mb--big {
+    margin-bottom: 6rem;
+}
+
+.p {
+    padding: 10em 2em;
+
+    @include respond(tab-land) {
+        padding: 8em 5em;
+    }
+
+    @include respond(tab-port) {
+        padding: 8em 5em;
+    }
+   
+    @include respond(phone) {
+        padding: 8em 1em;
+    }
+
+    @include respond(big-desktop) {
+        padding: 8rem 2rem;
+    }
+}
+
+
+.pl {
+    padding-left: 4rem;
+}
+
+.center {
+    
+    margin: 0 auto;
+}

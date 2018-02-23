@@ -1,0 +1,39 @@
+.header {
+    height: 90vh;
+    background-image: url("../img/background-image.png");
+    background-repeat: no-repeat;
+    color: $white;
+    background-position: center bottom;
+    background-size: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading__container {
+    text-align: center;
+}
+
+.heading {
+    &__main {
+        font-family: 'Chunkfive', sans-serif;
+        font-size: 8rem;
+        text-transform: uppercase;
+        &--darkblue {
+            color: $darkblue;
+        }
+    }
+    &__text {
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+        &:first-of-type {
+            margin-top: 1.5rem;
+        }
+    }  
+ }
+
+
+
+

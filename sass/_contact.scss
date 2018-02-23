@@ -1,0 +1,145 @@
+.contact {
+    background-image: linear-gradient(rgba($darkblue, 0.8), rgba($darkblue, 0.8)), url("../img/contact-bg.png");
+    &__heading {
+        font-size: 6.7rem;
+        font-family: "Chunkfive", sans-serif;
+        color: $white;
+        text-align: center;
+    }
+}
+.form {
+    width: 90%;
+    margin-right: auto;
+    @include respond(tab-port) {
+        width: 100%;
+    }
+}
+
+.formgroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input, .textarea {
+    flex: 1;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    
+}
+
+::placeholder {
+    font-size: 1.4rem;
+    color: #b9b9b9;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+
+.contact {
+ 
+    &__container {
+        max-width: 90%;
+        margin-left: auto;
+        @include respond(tab-port) {
+            width: 100%;
+            margin-top: 5rem;
+        }
+    }
+    &__subheading {
+        color: $white;
+        font-size: 4.4rem;
+        font-weight: 300;
+    }
+    &__item {
+        list-style-type: none;
+        font-size: 1.2rem;
+        &:not(:last-child) {
+            padding-bottom: .5rem;
+        }
+    }
+    &__icon {
+        width: 2rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: $white;
+
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: $green;
+        }
+    }
+    &__link--span {
+        display: block;
+        color: $yellow;
+        font-weight: 700;
+        margin-left: 2.5rem;
+        text-transform: uppercase;
+        &:hover {
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}
+
+.keep {
+    background-color: $green;
+    &__heading {
+        font-family: 'Chunkfive',sans-serif;
+        font-size: 6.7rem;
+        color: $white;
+        padding-bottom: 1.5rem;
+        @include respond(tab-port) {
+            text-align: center;
+            padding-bottom: .5rem;
+        }
+    }
+    &__text {
+        font-size: 1.6rem;
+        color: $white;
+        @include respond(tab-port) {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+.subscribe {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    @include respond(tab-port) {
+        width: 60%;
+    }
+    @include respond(phone) {
+        width: 90%;
+    }
+
+    &__input {
+        width: 100%;
+        background-color: $white;
+        border-radius: 1rem;
+        overflow: hidden;
+        outline: none;
+        padding: 3rem;
+        border: 1px solid $darkblue;
+        &:valid {
+            background-color: #ddffdd;
+        }
+    }
+    &__submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 8rem;
+        height: 100%;
+        background-color: $darkblue;
+        border: none;
+        outline: none;
+        border-radius: 0 1rem 1rem 0;
+        cursor: pointer;
+    }
+}

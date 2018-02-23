@@ -1,0 +1,11 @@
+.city {
+    background-color: $white;
+    &__text-content {
+        @include respond(tab-port) {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 5rem;
+        }
+    }
+}

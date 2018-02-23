@@ -1,0 +1,72 @@
+.icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .icon-triangle-down {
+    fill: $white;
+  }
+
+ .icon-info-with-circle {
+     position: relative;
+     top: .4rem;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: .5rem;
+    
+  }
+
+  .icon-search {
+      position: absolute;
+        left: 15px;
+        top:10px;
+        fill: $dark;
+  }
+
+  .icon-arrow-right2 {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: .5rem;
+  }
+
+  .icon-look {
+    width: 1rem;
+    fill: $grey;
+}
+
+.icon-triangle {
+    width: 1rem;
+    color: $grey;
+}
+
+.icon-facebook-with-circle,
+.icon-twitter-with-circle,
+.icon-instagram-with-circle {
+    fill: $grey;
+    
+    cursor: pointer;
+    transition: initial;
+    &:not(:last-child) {
+        margin-right: .6rem;
+    }
+}
+
+.icon-facebook-with-circle:hover {
+    fill: $facebookBlue;
+}
+.icon-twitter-with-circle:hover {
+    fill: $twitterBlue;
+}
+.icon-instagram-with-circle:hover {
+    fill: $instagramRed;
+}
+
+.icon-chevron-right {
+    width: 6rem;
+    height: 6rem;
+    fill: $white;
+}
